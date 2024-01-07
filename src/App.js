@@ -1,6 +1,6 @@
 import './App.css';
 import React from "react";
-
+import Gender from './Components/Gender';
 class App extends React.Component {
   constructor(props){
     super(props);
@@ -29,6 +29,9 @@ class App extends React.Component {
     <button onClick={this.increment}>+</button>
     <input type={"text"} placeholder='Enter Your name' value={this.state.name} onChange={this.handleChange}></input>
       <p>{this.state.name}</p>
+     {/* <Gender gender="male"/> this is correct because we are passing string
+      <Gender gender= {9}/> this is worng because it is not a string and we are expecting string */}
+      <Gender gender= "Male"/>
       </div>
     );
 }
